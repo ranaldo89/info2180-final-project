@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title> Create Issue </title>
+		
+</head>
+<body>
+
+    <div class="header">
+    	<h1><i class="material-icons"> bug_report</i>BugMe Issue Tracker</h1>
+  	</div>
+
+    <div class="sidepanel">
+    	<ul class="">
+    		<li><i class="material-icons">home</i><a href="#"> Home</a></li>
+      		<li><i class="material-icons">person_add</i><a href="#"> Add User</a></li>
+      		<li><i class="material-icons">add_circle</i><a href="#"> New Issue</a></li>
+      		<li><i class='fas fa-power-off'></i><a href="#"> Logout</a></li>
+    	</ul>    
+  	</div>
+
+    <div id="main"> 
+    	<h1>Create Issue</h1>
+    	<form>
+    		Title
+    		<input type="text" id = "title" class="title"> 
+    		Description
+    		<input type="text" id = "description" class="description">
+		
+			Assigned To
+			<select name="cars">
+				<option></option>
+			</select>
+
+			Type
+			<select name="type">
+				<option value="bug">Bug</option>
+				<option value="proposal">Proposal</option>
+				<option value="task">Task</option>
+			</select>
+
+			Priority
+			<select name="cars">
+				<option value="minor">Minor</option>
+				<option value="major">Major</option>
+				<option value="critical">Critical</option>
+			</select>
+			<button type = "submit"> Submit </button>
+    </div>
+    
+</body>
+</html>
