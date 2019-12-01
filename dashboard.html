@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="styles/adduser.css">
+  <link rel="stylesheet" type="text/css" href="styles/dashboard.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -18,7 +18,7 @@
     <h1><i class="material-icons"> bug_report</i>BugMe Issue Tracker</h1>
   </div>
 
-  <div class="sidebar">
+  <div class="sidepanel">
     <ul class="">
       <li><i class="material-icons">home</i><a href="dashboard.html"> Home</a></li>
       <li><i class="material-icons">person_add</i><a href="adduser.html"> Add User</a></li>
@@ -28,14 +28,27 @@
   </div>
 
   <div class="mainbar">
-    <div class="dashtable">
-      <h1> Issues </h1>
-      <table>
-        
-      </table>
+    
+      <div class="top"> 
+        <h1>Issues</h1>
+        <button id="top" class="newIssue" style="color: white">Create New Issue</button>
+      </div>
 
-      
-    </div>
+      <ul id="aboveTitles">
+        <li>Filter by: </li>
+        <li>all</li>
+        <li>open</li>
+        <li>my tickets</li>
+      </ul>
+
+      <ul class="titles"> 
+        <li>Title</li>
+        <li>Type</li>
+        <li>Status</li>
+        <li>Assigned To</li>
+        <li>Created</li>
+      </ul>
+    
   </div>
 
 
