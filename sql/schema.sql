@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS bugmedb;
 CREATE DATABASE bugmedb;
 USE bugmedb;
 
-/*Currently hashing in database it might be better to do it in PHP*/
+
 CREATE TABLE `users` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`firstname` varchar(255) NOT NULL,
@@ -11,6 +11,11 @@ CREATE TABLE `users` (
 	`password` CHAR(32) NOT NULL,
 	`date_joined` DATETIME NOT NULL,
 	PRIMARY KEY (`id`)
+
+);
+
+INSERT INTO Users (firstName, lastName, password, email) 
+VALUES("Admin", "", md5("password123"), "admin@bugme.com");
 
 CREATE TABLE `issues` (
 	`id` INT NOT NULL AUTO_INCREMENT,
@@ -24,3 +29,7 @@ CREATE TABLE `issues` (
 	`created` DATETIME NOT NULL,
 	`updated` DATETIME,
 	PRIMARY KEY (`id`)
+
+);
+
+GRANT ALL PRIVILEGES ON info2180_bugme_issue_tracker.* TO 'admin'@'localhost' IDENTIFIED BY "info2180-project";
